@@ -1,0 +1,20 @@
+.players {
+  max-width: 16em;
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.counter {
+    width: 5em;
+}
+
+.title {
+    width: 10em;
+    flex-grow: 1;
+}
