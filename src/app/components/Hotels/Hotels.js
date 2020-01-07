@@ -1,8 +1,8 @@
 
-export default ({hotels=[]}) => (
+export default ({hotels={}}) => (
     <ul>
         {
-            hotels.map( (hotel, i) =>
+            Object.keys(hotels).map( (hotel, i) =>
                 <li key={i}>{hotel.name} ({hotel.availableShares})</li>
             )
         }

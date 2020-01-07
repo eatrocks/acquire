@@ -13,8 +13,7 @@ const resolveOnServer = (props, store) => store.dispatch( init() );
 const ServerLoadedComponent = wrap(LazyHotels, resolveOnServer);
 
 
-const mapStateToProps = ({ hotels }) =>
-    ({ hotels: hotels.all, current: hotels.current });
+const mapStateToProps = ({ hotels }) => ({ hotels });
 
 
 const bindActionsToDispatch = (dispatch) => ({
